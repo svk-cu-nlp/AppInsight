@@ -6,7 +6,7 @@
 ## 🔗 Features
 - Sentiment analysis of reviews
 - Topic analysis of reviews
-- Summary generation of individual review
+- Summary generation of each review
 - Querying agent to get clearer idea about which feature requires rework
 
 ## Getting Started
