@@ -1,5 +1,4 @@
 # AppInsight
-<hr/>
 <h2 align="center"> AppInsight Tool Demo </h2>
 https://github.com/svk-cu-nlp/AppInsight/assets/96056131/ba337577-0bae-4f41-8c64-4edec6451c85
 
