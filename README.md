@@ -13,5 +13,8 @@ https://github.com/svk-cu-nlp/AppInsight/assets/96056131/ba337577-0bae-4f41-8c64
 ```bash
 pip install -r requirements.txt
 ```
-
+### 💻 Execution
+```bash
+streamlit run ./src/app.py
+```
 
