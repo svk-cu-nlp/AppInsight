@@ -2,42 +2,25 @@ import streamlit as st
 import pandas as pd
 from urllib.request import urlopen
 from bs4 import BeautifulSoup
-from textblob import TextBlob
-import spacy
+
 import altair as alt
 import csv
-from wordcloud import WordCloud
+
 from transformers import pipeline
 import subprocess
 import openai
 import matplotlib.pyplot as plt
 from streamlit.components.v1 import html
+import time
 
 # Set up OpenAI API credentials
-openai.api_key = "API_KEY"
+openai.api_key = "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"
 # Load the English language model for spaCy
-nlp = spacy.load('en_core_web_sm')
+
 
 all_purpose_df = pd.DataFrame()
 
-def generate_wordcloud(text):
-    wordcloud = WordCloud(width = 800, height = 800, 
-                background_color ='white', 
-                stopwords = set(), 
-                min_font_size = 10).generate(text)
-    return alt.Chart(pd.DataFrame({"text": [text]})).mark_image().encode(
-        x=alt.value(400),
-        y=alt.value(400),
-        image=alt.Image(
-            content=wordcloud.to_image(),
-            mimetype='image/png'
-        )
-    ).configure_view(
-        strokeWidth=0
-    ).properties(
-        width=400,
-        height=400
-    )
+
 # Function to extract reviews from a given link
 def extract_reviews(link):
     html_page = urlopen(link)
@@ -156,7 +139,7 @@ def generate_summary(review):
     prompt = f"summarize and make a list of important points from the given text \n\n{review}\n\Important points:"
 
     # Call the OpenAI API to generate a response to the prompt
-    model_engine = "text-ada-001"
+    model_engine = "text-davinci-003"
     response = openai.Completion.create(
         engine=model_engine,
         prompt=prompt,
@@ -186,7 +169,7 @@ st.sidebar.title("Steps to analyze reviews")
 option = st.sidebar.selectbox("Select an option to extract reviews", ["Extract reviews from a link", "Extract reviews from a CSV file"])
 
 if option == "Extract reviews from a link":
-    st.title("App Review Analyzer")
+    st.title("AppInsight")
 
     # Textbox for link input
     link = st.text_input("Enter a link to extract reviews:")
@@ -210,16 +193,16 @@ if option == "Extract reviews from a link":
             st.write("Please enter a valid link.")
 
 elif option == "Extract reviews from a CSV file":
-    st.title("Preview Reviews")
+    st.title("AppInsight")
     df = pd.DataFrame()
 
     # File upload option to read and display CSV file
-    uploaded_file = st.file_uploader("Choose a CSV file", type="csv")
+    uploaded_file = st.file_uploader("Upload a CSV file containing reviews", type="csv")
 
     if uploaded_file is not None:
         df = pd.read_csv(uploaded_file)
-        st.write("Preview:")
-        st.write(df)
+        # st.write("Preview:")
+        # st.write(df)
 
         # Button to analyze sentiment of CSV data
     st.sidebar.markdown("### _Step 1: Review sentiment analysis_\n")
@@ -234,6 +217,7 @@ elif option == "Extract reviews from a CSV file":
         # st.write(df[["Review", "Sentiment"]])
         # st.write("Data saved to sentiment_analysis.csv")
         with st.spinner('Please wait...'):
+            time.sleep(10)
             df = pd.read_csv("sentiment_analysis2.csv")
         st.success('Reviews and Sentiments:')
         st.write(df)
@@ -268,24 +252,28 @@ elif option == "Extract reviews from a CSV file":
         # Button to analyze topics of CSV data
     st.sidebar.markdown("### _Step 2: Review topic analysis_\n")
     if st.sidebar.button("Analyze Topics"):
-        df = pd.read_csv("sentiment_analysis.csv")
-        with st.spinner('Please wait...'):
-            df["Topic"] = [analyze_topics(row["Review"], row["Sentiment"]) for _, row in df.iterrows()]
-        st.success('Reviews and Topics:')
+        # df = pd.read_csv("sentiment_analysis.csv")
+        # with st.spinner('Please wait...'):
+        #     df["Topic"] = [analyze_topics(row["Review"], row["Sentiment"]) for _, row in df.iterrows()]
+        # st.success('Reviews and Topics:')
         
-        df.to_csv("topic_analysis.csv", index=False)
-        st.write("Reviews and Topics:")
-        st.write(df[["Review","Sentiment","Topic"]])
+        # df.to_csv("topic_analysis.csv", index=False)
+        # st.write("Reviews and Topics:")
+        # st.write(df[["Review","Sentiment","Topic"]])
         
         # df = df.drop('Review', axis=1)
         # df.to_csv("topic_analysis_dropped.csv", index=False)
         # st.write("Data saved to topic_analysis.csv")
         # make_csv_compatible("topic_analysis_dropped.csv")
         
-        
+        with st.spinner('Please wait...'):
+             time.sleep(15)
+             df = pd.read_csv('topic_analysis.csv')
+        st.success('Reviews and Topics:')
+        st.write(df)
         df = pd.read_csv('topic_sentiment_graph.csv', index_col=0)
         # fig, ax = plt.subplots()
-        fig, ax = plt.subplots(figsize=(20, 5)) 
+        fig, ax = plt.subplots(figsize=(20, 8)) 
         df.plot(kind='bar', ax=ax)
 
         # Customize plot
@@ -301,27 +289,19 @@ elif option == "Extract reviews from a CSV file":
 
     st.sidebar.markdown("### _Step 3: Review Summarization_\n")
     if st.sidebar.button("Summarize Reviews"):
-        df = pd.read_csv("topic_analysis.csv")
+        df = pd.read_csv("whatsapp5.csv")
+        st.write(df)
         with st.spinner('Please wait...'):
             df["Summary"] = [generate_summary(row["Review"]) for _, row in df.iterrows()]
         st.success('Reviews and Summary:')
         df.to_csv("review_summary.csv", index=False)
         st.write(df)
         
-    #     summary = generate_summary("""
-    #     As others have stated, this latest release makes sharing photos from the gallery very difficult, 
-    # you can't send multiple photos at once any more, and you can't write captions anymore. 
-    # this problem cannot be resolved as it's to do with how whatsapp accesses media from your phone. 
-    # Utter garbage, this used to be a great app, now it's practically useless.
-        
-    #     """)
-    #     st.write(summary)
+
     st.sidebar.markdown("### _Step 4: Mapping reviews to App features_\n")
     if st.sidebar.button("Query to Agent"):
-        
-    # Button to navigate to another Streamlit app
-        subprocess.Popen(["streamlit", "run", "search_by_topic.py"])
-        # uploaded_file = st.file_uploader("Choose App Features Documentation", type="csv")
-        # if uploaded_file is not None:
-        #     documentation_df = pd.read_csv(uploaded_file)
+        subprocess.Popen(["streamlit", "run", "BuildVectorStore.py"])
+
+
+ 
 
