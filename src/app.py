@@ -214,22 +214,15 @@ elif option == "Extract reviews from a CSV file":
         # Button to analyze sentiment of CSV data
     st.sidebar.markdown("### _Step 1: Review sentiment analysis_\n")
     if st.sidebar.button("Analyze Sentiment"):
-        # with st.spinner('Please wait...'):
-        #     df["Sentiment"] = [analyze_sentiment(row["Review"]) for _, row in df.iterrows()]
-        # st.success('Done!')
-
-        # df.to_csv("sentiment_analysis.csv", index=False)
-        # all_purpose_df = df
-        # st.write("Reviews and Sentiments:")
-        # st.write(df[["Review", "Sentiment"]])
-        # st.write("Data saved to sentiment_analysis.csv")
         with st.spinner('Please wait...'):
-            time.sleep(10)
-            df = pd.read_csv("sentiment_analysis2.csv")
-        st.success('Reviews and Sentiments:')
-        st.write(df)
-        
-        df = pd.read_csv('sentiment_analysis_num.csv', index_col=0)
+            df["Sentiment"] = [analyze_sentiment(row["Review"]) for _, row in df.iterrows()]
+        st.success('Done!')
+
+        df.to_csv("sentiment_analysis.csv", index=False)
+        all_purpose_df = df
+        st.write("Reviews and Sentiments:")
+        st.write(df[["Review", "Sentiment"]])
+       
 
         # Create a figure and axes with desired size
         fig, ax = plt.subplots(figsize=(15, 7))
@@ -259,25 +252,25 @@ elif option == "Extract reviews from a CSV file":
         # Button to analyze topics of CSV data
     st.sidebar.markdown("### _Step 2: Review topic analysis_\n")
     if st.sidebar.button("Analyze Topics"):
-        # df = pd.read_csv("sentiment_analysis.csv")
-        # with st.spinner('Please wait...'):
-        #     df["Topic"] = [analyze_topics(row["Review"], row["Sentiment"]) for _, row in df.iterrows()]
-        # st.success('Reviews and Topics:')
-        
-        # df.to_csv("topic_analysis.csv", index=False)
-        # st.write("Reviews and Topics:")
-        # st.write(df[["Review","Sentiment","Topic"]])
-        
-        # df = df.drop('Review', axis=1)
-        # df.to_csv("topic_analysis_dropped.csv", index=False)
-        # st.write("Data saved to topic_analysis.csv")
-        # make_csv_compatible("topic_analysis_dropped.csv")
-        
+        df = pd.read_csv("sentiment_analysis.csv")
         with st.spinner('Please wait...'):
-             time.sleep(15)
-             df = pd.read_csv('topic_analysis.csv')
+            df["Topic"] = [analyze_topics(row["Review"], row["Sentiment"]) for _, row in df.iterrows()]
         st.success('Reviews and Topics:')
-        st.write(df)
+        
+        df.to_csv("topic_analysis.csv", index=False)
+        # st.write("Reviews and Topics:")
+        st.write(df[["Review","Sentiment","Topic"]])
+        
+        df = df.drop('Review', axis=1)
+        df.to_csv("topic_analysis_dropped.csv", index=False)
+        st.write("Data saved to topic_analysis.csv")
+        make_csv_compatible("topic_analysis_dropped.csv")
+        
+        # with st.spinner('Please wait...'):
+        #      time.sleep(15)
+        #      df = pd.read_csv('topic_analysis.csv')
+        # st.success('Reviews and Topics:')
+        # st.write(df)
         df = pd.read_csv('topic_sentiment_graph.csv', index_col=0)
         # fig, ax = plt.subplots()
         fig, ax = plt.subplots(figsize=(20, 8)) 
