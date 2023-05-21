@@ -16,7 +16,7 @@ pip install -r requirements.txt
 ```
 ### 🔌 Setting OpenAI API
 - Get an OpenAI [API Key](https://platform.openai.com/account/api-keys)
-- Add the API Key and Organization Key in [config.py] src/config.py
+- Add the API Key and Organization Key in [config.py] [src/config.py]
 ### 💻 Execution
 ```bash
 streamlit run ./src/app.py
