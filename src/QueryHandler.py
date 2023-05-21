@@ -53,9 +53,11 @@ if 'selected_review' not in st.session_state:
 def ask_bot(input_text):
     print("searching DB index")
     result = []
+    input_string = ""
     # persist_directory = st.session_state['db']
-    
-    persist_directory = './evernotenew_7db3aa5b-dfaf-4dde-8f89-4de0302c5772/db'
+    with open("input.txt", "r") as file:
+        input_string = file.read()
+    persist_directory = "./"+input_string+'/db'
     embeddings = OpenAIEmbeddings(openai_api_key=OPENAI_API_KEY)
     #print(persist_directory)
     docsearch = Chroma(persist_directory=persist_directory, embedding_function=embeddings)
@@ -151,7 +153,7 @@ def get_text():
 df = pd.read_csv('review_summary1.csv')
 selected_review = ""
 # Define dropdown options
-options = ["none","improvement suggestion", "bug", "feature addition", "fault", "feature request", "information enquiry", "content request"]
+options = ["none","improvement suggestion", "bug", "fault", "feature request", "information enquiry", "content request"]
 
 st.sidebar.markdown("### _View Review Analysis by Apply Filters_\n")
 # Create sidebar with dropdown

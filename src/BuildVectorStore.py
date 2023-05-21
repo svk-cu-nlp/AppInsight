@@ -113,5 +113,7 @@ if st.button("Build Knowledge Graph"):
         
 if st.button("Start Conversation"):
     project = st.session_state.project
-    project = 'evernotenew_7db3aa5b-dfaf-4dde-8f89-4de0302c5772'
-    subprocess.Popen(["streamlit", "run", "QueryHandler.py", "--input", project])
+    
+    with open("input.txt", "w") as file:
+        file.write(project)
+    subprocess.Popen(["streamlit", "run", "QueryHandler.py"])
