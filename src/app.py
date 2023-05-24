@@ -93,6 +93,25 @@ def analyze_topics(text, sentiment):
     print(res['labels'][0])
     return res['labels'][0]
 
+def analyze_topics_with_openAI(text, sentiment):
+    
+    prompt = f"Please anallyze the topic of the following text and classify it into one of the following classes: 'improvement suggestion', 'bug', 'feature information', 'fault or malfunction', 'feature request', 'information enquiry', 'content request'. Answer should be one of these classes nothing else. \n\n{text}\n\nTopic:"
+
+    # Call the OpenAI API to generate a response to the prompt
+    model_engine = "text-davinci-003"
+    response = openai.Completion.create(
+        engine=model_engine,
+        prompt=prompt,
+        max_tokens=10,
+        n=1,
+        stop=None,
+        temperature=0.5,
+    )
+    # Parse the response and extract the predicted sentiment
+    predicted_topic = response.choices[0].text.strip() # for GPT3
+    #predicted_sentiment = response.choices[0].message['content'].strip()
+    return predicted_topic
+
 # Making compatible csv for plot
 def make_csv_compatible(filename):
     sentiment_counts = {}
@@ -255,6 +274,7 @@ elif option == "Extract reviews from a CSV file":
         df = pd.read_csv("sentiment_analysis.csv")
         with st.spinner('Please wait...'):
             df["Topic"] = [analyze_topics(row["Review"], row["Sentiment"]) for _, row in df.iterrows()]
+            #df["Topic"] = [analyze_topics_with_openAI(row["Review"], row["Sentiment"]) for _, row in df.iterrows()] # use it if you want to more accurate topics with openAI 
         st.success('Reviews and Topics:')
         
         df.to_csv("topic_analysis.csv", index=False)
