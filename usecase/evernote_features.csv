@@ -1,0 +1,606 @@
+Feature,Description
+Create Note,"Tap the green New note button.
+
+Older version of Evernote for Android: Tap the green plus button (+)."
+Advanced Search,"Evernote?s powerful search makes it easy to quickly locate whatever you?re looking for. Some notable features include:
+
+Robust search dropdown menu with quick access to:
+Search suggestions. Real-time suggestions give you answers as you type.
+Saved searches. Create a saved search for complex searches or things you search for frequently.
+Notes, notebooks, and Spaces. Quick access to go to specific content.
+Search filters. Narrow results to find exactly what you need.
+Search without punctuation. Find what you need regardless of punctuation.
+PDF and Document search. Find text in PDFs, Microsoft Office docs, images, presentations, and scanned documents instantly.
+Handwriting search. Find handwritten text in images attached to notes.
+Advanced search syntax and Boolean search. Search your notes using special search commands.
+Some search features are only available with certain Evernote plans. Learn more >>
+
+To take advantage of these search features, be sure you?re using the new Evernote for Mac, Windows, iOS, Android, and Web.
+
+Search Dropdown
+Search features
+
+There are four sections in the search dropdown: Search suggestions, Go to..., Add filter, and Saved searches. These suggestions are powered by an algorithm that predicts what may be relevant to you based on various factors, such as prior searches and recent activity.
+
+Search suggestions
+Search suggestions are located at the top of the dropdown list that appears when you click or tap into the search bar and are indicated by a magnifying glass icon on the left. Clicking on a search suggestion will run the suggested search.
+
+Saved searches
+If you have saved searches set up, those will appear below search suggestions.
+
+To create a new saved search, simply execute a search, then click or tap the More actions button (three dots) at the top of the note list panel and select Save search.... To change the name of a saved search, or delete it altogether, run the saved search, click or tap the same three dots at the top of the note list panel, then select Edit saved search... or Delete saved search.
+
+If you do not have any saved searches, this section will not appear in your search dropdown.
+
+Learn more >>
+
+Go to...
+This section suggests specific notes, notebooks, and spaces. Selecting one of these will directly open that particular note or notebook, helping you get to where you need faster.
+
+Add filters
+Search filters allow you to quickly search for notes that contain a specific type of content. These filters may appear in the search dropdown if you have this type of content. Alternatively, you can type the name of the filter into the search bar, then click or tap on the filter name to apply it. Note that the filter will not appear if you do not have notes with that type of content.
+
+Filters are available for content that contains:
+
+Addresses
+Archive files
+Attachments
+Audio
+Calendar events
+Checkboxes
+Code blocks
+Contacts
+Dates
+Document files
+Email addresses
+Encrypted
+Google Drive
+Images
+Integers
+Lists
+Numbers
+Office files
+PDF files
+Percentages
+Person names
+Phone numbers
+Presentation files
+Prices
+Spreadsheets
+Tables
+Time
+URLs
+Video
+Webclips
+Other filters can be applied to search results by clicking the Add filters icon above the list of search results (on desktop), or by tapping the three dots in the upper right corner and selecting Filter notes (on mobile). From there, you will see the full list of filter options available, including:
+
+Tags
+Located in
+Contains
+Created date
+Updated date
+To learn more, visit Filter your notes list.
+
+Searching without punctuation
+Evernote can search your content even when there are variations of punctuation between the entered text and the actual spelling in the note. Some examples include:
+
+Dash - Results for ""check-in"" can be searched by ""check,"" ""in,"" or ""checkin""
+Underscore - Results for ""customer_id_number"" can be searched by ""customer,"" ""id,"" ""number,"" or ""customeridnumber""
+Period - Results for ""R.S.V.P."" can be searched by ""rsvp""
+Apostrophe - Results for ""O'Connor"" can be searched by ""connor"" or ""oconnor""
+URL - Results for ""http://www.evernote.com/download"" can be searched by ""www,"" ""evernote,"" ""com,"" ""download,"" or ""evernotecom"""
+PDF and Document search,"With Evernote, you can search PDFs created from:
+
+Microsoft Word, Adobe Acrobat, or other office and word processing applications (Evernote Premium and Business only)
+Scanned documents
+Which types of scanned PDFs are searchable?
+Scanned PDFs with clear, typed text (handwriting is not searchable inside PDFs)
+PDFs that do not already contain text that you can select or copy
+PDFs with at least one page with a small image (1025 pixels of image data)
+PDFs less than 100 pages long
+PDFs less than 25 MB in size
+PDFs that are not password-protected
+PDFs that are not corrupted or unreadable
+Troubleshooting: If scanned PDFs are not appearing in your search results
+Sync Evernote. It can take up to 4 hours for Evernote to recognize text in newly attached PDFs. If you encounter sync errors, check here for troubleshooting suggestions. Note: If you are working with a local notebook, PDFs inside that notebook are not synced and will not be searchable. Move the note into a synced notebook.
+Search Evernote for a word you know is inside the scanned PDF. If the word isn't found, the file is not indexed for search.
+Open the PDF in Adobe Reader or your PDF viewer and try selecting text in the file. If the text is selectable, it should show up in Evernote search. If text is not selectable, your PDF is probably scanned images and you need Evernote Premium for the text to be recognized.
+Contact us for additional help."
+Boolean search,"Advanced search syntax gives you the ability to search your notes using special search commands, like by the date they were created, a specific tag, or the type of content they contain (audio, images, etc.)
+
+Geographic search: Find notes based on the location they were created using latitude, longitude, and radius.
+
+Boolean search: Boolean search is a type of search where you can combine keywords with operators (or modifiers). You can search in Evernote using AND, OR, NOT, and ( )."
+Handwriting search,"Did you know that when you snap a photo or attach an image to a note, Evernote can find and identify text ? including handwritten text ? inside that image?
+
+How it works
+Typewritten text and handwritten notes that are in JPG, PNG, or GIF file format are evaluated by our indexing system. Text found within an image will be evaluated if it matches one of the following orientations within a few degrees:
+
+0ø ? normal horizontal orientation
+90ø ? vertical orientation
+270ø ? vertical orientation
+Text that does not match one of these orientations will be ignored (including diagonal and inverted text). When images are indexed, they may turn up several results. For example, the indexing system may look at a word and decide that it is either ?cat"", ?bat?, or ?3at?.
+
+The best way to ensure that handwriting, specifically, is found and indexed is to follow these guidelines:
+
+The clearer the handwriting, the more likely it will be accurately indexed for search. If the penmanship is difficult to read, then Evernote will have a much harder time discerning the written words.
+Keep in mind that, instead of generating a single match for a given handwritten word, Evernote will generate several possible matches for the word. For example, the word ""flat"" as written in a JPG might be indexed as ""flat"", ""float"" or ""fiat"".
+Currently, Evernote can index 28 typewritten languages and 11 handwritten languages. You can choose which language is used when indexing by changing the Recognition Language setting in your "
+Find notes,
+Take notes,"You can keep pretty much any type of content in a note. Here are some ideas to get you started:
+
+Type, write, or even record audio notes from any meeting.
+Annotate photos and PDFs for quick communication with teams working remotely in field offices or building sites.
+Photos of anything that might inspire new ideas, new designs, or new compositions.
+Snap photos of a whiteboard or Post-it ? Notes from a brainstorm session.
+Scan contracts, legal documents, receipts, or business cards.
+Use your computer, mobile phone, or tablet to create any kind of note and recall them as needed."
+Types of content to a note,"Notes aren't just for plain text. You can save many types of content in a note. The most common include:
+
+File attachments
+
+Checkboxes and checklists
+
+Bulleted and numbered lists
+
+Images from your device's saved photos
+
+Images taken with the in-app camera
+
+Audio recordings"
+Customize styles and layouts,"Use the text formatting and layout tools to change the way the note looks:
+
+Text font and style tools: Bold, italicize, and underscore text
+Highlighting tool: Highlight the selected text
+List tools: Create checklists, bulleted lists, and numbered lists
+Layout tools: Insert a line divider, realign text, and insert a table"
+Create reminders to manage tasks,"Use reminders to keep track of notes that contain time-sensitive information, and receive alerts for upcoming tasks and events."
+Annotate your notes,"Clarify and solicit feedback by annotating an entire note, an individual image, or a PDF. Use lines, shapes, arrows to comment, clarify, and collaborate."
+Save emails in Evernote,"Forward digital receipts, travel reservations, or weekly electronic newsletters directly to your Evernote account."
+Scan business cards,"Use Evernote to capture photos of business cards, and extract and save contact details from the card into Evernote."
+Clip web pages,"Save sections and entire pages clipped from the web from any desktop computer. Once saved, contents can be annotated, edited, and shared with others."
+"Organize with notebooks
+","Notebooks are how notes are organized in Evernote and are commonly used to separate notes by category, location, or purpose. For example, you might create one notebook called 'Home Remodel' and one called 'Schoolwork' to keep these types of notes separate and easier to find.
+
+For example, you may create notebooks for:
+
+Work projects
+Travel planning
+Creative projects
+Company resources
+Receipts
+Contracts or documents"
+Create a notebook,"Notebooks are how notes are organized in Evernote, and are commonly used to separate notes by category, location, or purpose. For example, you might create one notebook called 'Home Remodel' and one called 'Schoolwork' to keep these types of notes separate and easier to find.
+
+Organize notes into notebooks so you can browse, search, and share similar notes easily, for example you may create a notebook for:
+
+Work projects
+Travel planning
+Creative projects
+Company resources
+Receipts
+Contracts or documents"
+Organizing with individual and team notebooks,
+Organize related notebooks into stacks,
+Create an organizational structure,
+Web Clipper,"Evernote Web Clipper is a simple extension for your web browser that lets you capture full-page articles, images, selected text, important emails, and any web page that inspires you.
+
+Get Evernote Web Clipper
+
+Available for Chrome, Safari, Internet Explorer (IE) 7+, Firefox, Opera, and Microsoft Edge (for Windows 10 or higher)
+
+ 
+
+Save your first web clip in 3 steps:
+Step 1Launch Web Clipper to start clipping
+Click the elephant button in your browser toolbar to launch Web Clipper. For easier access, make sure to pin the Web Clipper extension so you can start clipping immediately!
+
+ 
+
+Step 1: Start Web Clipper
+ 
+ 
+Step 2Choose a clip type
+Save the entire article with the Article clip type, remove clutter with the Simplified Article clip type, or take a screenshot and annotate it with the Screenshot clip type.
+
+ 
+
+Share clips
+ 
+ 
+Step 3Save to Evernote
+Once you?ve clipped what you need, simply click ?Save Clip? to save to Evernote. If you want to organize your clip into a different notebook, add a tag, or add a comment, you can do that easily right before you clip!"
+Organize tags,"Tags let you add keywords to notes, making them easier to find and browse when you?ve got a lot of them. Use tags when a note might apply to more than one category or when you want to filter results in a certain notebook by a keyword. You could use tags to associate notes with categories, memories or locations.
+
+For example, you may create tags for:
+
+Personal organization: Add a tag for each member of your family, or for the frequency you need to reference it, such as a grocery list or to-do list (daily, weekly, monthly).
+School: Add a tag for each of your subjects, or for individual semesters.
+Project management: Add a tag to identify the project state (active, next, completed) or to the spec number or feature.
+Task management: Add a priority label to notes (p1, p2, p3).
+Recruiting: Add a tag for the location of a position or the hiring manager (nyc, tokyo).
+Research: Add a tag for the relevant company or project."
+Create Tags,"Tags let you add keywords to notes, making them easier to find and browse when you?ve got a lot of them. Use tags when a note might apply to more than one category or when you want to filter results in a certain notebook by a keyword. You could use tags to associate notes with categories, memories or locations.
+
+For example, you may create tags for:
+
+Personal organization: Add a tag for each member of your family, or for the frequency you need to reference it, such as a grocery list or to-do list (daily, weekly, monthly).
+School: Add a tag for each of your subjects, or for individual semesters.
+Project management: Add a tag to identify the project state (active, next, completed) or to the spec number or feature.
+Prioritizing: Add a priority label to notes (p1, p2, p3).
+Recruiting: Add a tag for the location of a position or the hiring manager (nyc, tokyo).
+Research: Add a tag for the relevant company or project.
+Create and add tags to notes
+Create tags in Evernote to give your notes an extra form of organization. With tags, you can categorize, prioritize, filter, and more. Visit Create and add tags to notes to get started.
+
+Create nested tags
+If you have a lot of tags in Evernote, you can organize them by creating nested tags. Nested tags are tags that are organized as sub-tags under a main tag. Visit Create nested tags to learn more.
+
+Find tagged notes
+Filter your notes by tags and nested tags to find what you need faster. When filtering by tags, you can view all notes associated with a tag and even choose to include or exclude notes with any of its sub-tags.
+
+Desktop: Click the filter icon at the top right of the notes list and click the Tags box to view your list of tags. Select a tag or click the three dots next to the desired tag, and select either Include sub-tags or Exclude sub-tags.
+Mobile: Tap the three dots at the top right of the notes list, tap Filter notes, then select Tags. Select a tag or click the three dots next to the desired tag, and select either Include sub-tags or Exclude sub-tags."
+Create and add tags to notes,"Tags let you add keywords to notes, making them easier to find and browse when you?ve got a lot of them. Use tags when a note might apply to more than one category or when you want to filter results in a certain notebook by a keyword. You could use tags to associate notes with categories, memories or locations.
+
+Note: In Evernote Teams, creating new tags automatically adds them to the searchable tag library, available to the entire team.
+
+Add a tag to a note"
+Create nested tags,"If you have a lot of tags in Evernote, you can organize them by creating nested tags. Nested tags are tags that are organized as sub-tags under a main tag. With nested tags, there is a main tag and one or more sub-tags. For example, a main tag ""Travel"" might have multiple sub-tags ""Chicago,"" ""New York,"" and ""San Francisco."""
+Create shortcuts to tags,
+"search notes, notebooks, and chats","Everything in Evernote is searchable, including the contents of notes, notebooks, tags, and attachments. Evernote's search lets you get really granular, but this just means you have a lot of ways to find what you are looking for.
+
+You can search for notes and notebooks by:
+
+Keywords or tags
+Contact info in business cards
+Handwritten or typed text in photos
+Text in attached documents and PDFs
+Notebooks other colleagues have shared
+Team members who know about a topic at your company
+Notes related to internet search results (with Evernote Web Clipper)
+You can search within your entire Evernote account, or filter by notebook, creation or update date, and geographical location where the note was created. If you use a particular search frequently, you can save and add it to your shortcuts for quick access. We also offer advanced search syntax for even more targeted searching.
+
+How to search notes, notebooks, and chats
+Search for notes: Type your search terms in the search field located near the top of the screen.
+Search for notebooks: Select Notebooks from the left navigation menu and enter your search terms in the search field.
+Search for notebooks in your team's account (Evernote Teams only): Select Notebooks from the left navigation menu, then select All Team Notebooks button near the bottom of the notebook list and type your search terms.
+More ways to find work in Evernote
+Search suggestions
+The search feature in Evernote automatically lists recent searches, saved searches, and suggest tags and notebooks as you are typing based on the terms you enter in the search field.
+
+Search options
+To narrow down the scope of your search, filter by notebook, creation or update date, or the geographical location where the note was created."
+Saved searches,"The new Evernote for Android: Execute a search, tap the options menu (three dots), then tap Save search.
+
+Older version of Evernote for Android: Execute a search, tap the three dots button, then tap Add to Home Screen.
+
+Note: Saved searches created on the older version of Evernote for Android will not be synced across all of your devices. They are only available on the Android device on which they are created."
+Create and Remove shortcuts ,"Shortcuts are a quick way to access most frequently used content in your Evernote account. Create a shortcut to notes, notebooks, notebook stacks, tags, or saved searches. Each of these shortcuts are marked by different icons in the navigation menu.
+
+Create a shortcut
+To create a shortcut, follow the instructions for your operating system below.
+
+MAC
+WINDOWS
+IPHONE, IPAD, AND IPOD TOUCH
+ANDROID
+Click the More actions button (three dots) in the top right corner of a note, notebook, or tag and select Add to shortcuts."
+Share notes,"Evernote makes it easy to share notes with others. Share notes such as meeting agendas, design ideas clipped from the web, travel itineraries, reports, or project task lists.
+
+Share a note within Evernote
+When you share a note within Evernote, recipients can open the note directly from the ""Shared with Me"" section of the app. Any time the recipient clicks the note from ""Shared with Me"", they should see the most recent version. To share a note within Evernote, follow the steps for your operating system below. Open the note you would like to share.
+Tap the Share button (silhouette with a plus symbol).
+Tap the Share button next to ""Invite someone"".
+Enter at least one email address (or select at least one contact) and include an optional message, then tap done on the keyboard.
+Tap the pencil button to set the permission level.
+Tap Send.
+Older version of Evernote for Android
+
+Open the note you would like to share.
+Tap the Share Note button (three connected dots).
+Enter at least one email address (or select at least one contact) and include an optional message.
+Tap the pencil icon to set the permission level.
+Tap Send (paper plane)."
+Share a note via public link,"Every note in Evernote comes with a unique URL you can copy and paste to share with anyone, even outside of Evernote. Each time someone views the link to your note, they will see the most recent version in their web browser. However, they can also choose to save a snapshot of the note to their own account. Because this is a public link, anyone with access to the link can view the note until you disable the link. To share a note via public link, follow the steps for your operating system below.
+
+MAC
+WINDOWS
+IPHONE, IPAD, AND IPOD TOUCH
+ANDROID
+The new Evernote for Android
+
+Open the note you would like to share.
+Tap the Share button (silhouette with a plus symbol)
+Toggle the switch next to ""Shareable link"".
+Older version of Evernote for Android
+
+Open the note you would like to share.
+Tap the Share Note button (three connected dots).
+Tap Shareable link off then select a share method."
+Edit shared note permissions,"To view and edit permissions for notes you've already shared, including to stop sharing, find the note from the note list, then follow the steps for your operating system below.
+
+MAC
+WINDOWS
+IPHONE, IPAD, AND IPOD TOUCH
+ANDROID
+The new Evernote for Android
+
+Select the shared note.
+Tap the Share button (silhouette with a plus symbol).
+Tap the permissions next to the invitee's name to change them.
+Older version of Evernote for Android
+
+Select the shared note.
+Tap the Share button (three connected dots).
+Tap the pencil icon to change permission or remove access for each user under Who can access.
+Tap Shareable link on to stop sharing via public link."
+Share a copy of a note via email,"When you share a copy of a note via email, you?re sending a snapshot of the note at the time you share it. Any content changes that you may make will not be visible to anyone you've previously shared the note with. To share a copy of a note via email, follow the steps for your operating system below.
+
+Note: You must have Evernote Premium, Personal, Professional, or Teams to share a copy of a note via email. Alternate sharing methods?for all customers?include sharing a note within Evernote or sharing a note using a public link.
+
+MAC
+WINDOWS
+IPHONE, IPAD, AND IPOD TOUCH
+ANDROID
+Open the note you would like to share.
+Tap the menu button (three dots) then tap Share.
+Tap the menu button (three dots) on the following screen and select Email copy of note.
+Enter at least one email address (or select at least one contact).
+Tap Send.
+Note: This feature is not available in the new Evernote for Android."
+Share notebooks,"Evernote lets you quickly and easily share any of your notebooks with other people, if you choose. Share notebooks to allow others to view and collaborate on work. For example:
+
+Organize a group project ? Collect all your meeting notes, files and to-do lists in one place.
+Build a creative repository ? Save design inspiration, articles and photos.
+Plan a business trip ? Put your itineraries, packing list and phone numbers where you can always access them.
+To share individual notes without sharing the entire notebook, visit Share notes.
+
+Share a notebook
+When you share a notebook in Evernote, recipients can open the notebook directly from the ""Shared with Me"" section of the app. To share a notebook, follow the steps for your operating system below.
+
+MAC
+WINDOWS
+IPHONE, IPAD, AND IPOD TOUCH
+ANDROID
+The new Evernote for Android
+
+Open the notebook you want to share.
+Tap the Share button (silhouette with a plus symbol).
+Tap the Share button next to ""Invite someone"".
+Enter at least one email address (or select at least one contact) and include an optional message.
+Tap the pencil button to set the permission level.
+Tap Send.
+Older version of Evernote for Android
+
+Open the notebook you want to share.
+Tap the Share button (three connected dots).
+Enter at least one email address (or select at least one contact) and include an optional message.
+Tap the pencil icon to set the permission level.
+Click Send."
+Edit shared notebook permissions,"When you invite someone to work with you in a notebook, you decide how much access to give them:
+
+Can edit and invite: Invitees can make changes to notes, add notes, share individual notes, and invite additional users to view and edit the shared notebook.
+Can edit: Invitees can make changes to notes, add notes, and share individual notes.
+Can view: Invitees can only view notes in the shared notebook.
+Edit notebook permissions
+To view and edit permissions for notebooks you've already shared, including to stop sharing, find the notebook from the notebook list, then follow the steps for your operating system below:
+
+MAC
+WINDOWS
+IPHONE, IPAD, AND IPOD TOUCH
+ANDROID
+Tap the menu button (three dots).
+Tap Modify Sharing.
+Tap the pencil icon to change permission or stop sharing."
+Publish a notebook,"Using Evernote for Mac or Windows, you can publish a notebook (make it public) by sharing it with a link. Anyone who has the link can access the notebook. To publish a notebook via public link, follow the steps for your operating system below."
+Evernote + Google Calendar,"Connect your Google Calendar and link notes to events to make them more useful and easy to find, so you can get more done.
+
+Create notes for events instantly and get quick access to them later, right from the new calendar widget in Home.
+Prep for meetings easily, ahead of time or on the spot. One click sets up a logically structured note, complete with event details and sections for action items and notes.
+Search for event details?like date, location, and attendees?so it's easier than ever to access the information you need.
+Never forget to take notes when you need to. Evernote can remind you to open or create a note before or immediately after an event.
+Note: Connecting your calendar requires a Personal, Professional, or Teams subscription.
+
+Add the calendar widget to Home
+To get started, make sure the calendar widget has been added to your Home. To add the calendar widget, follow the steps for your operating system below.
+
+MAC
+WINDOWS
+IOS
+ANDROID
+From Home, tap the Customize button in the upper right corner.
+Tap the plus icon next to the calendar widget in the ""Available Widgets"" section."
+Add and remove Google accounts,"You can connect your Google account to your Evernote account for the following integrations:
+
+Connect to Google Calendar
+Attach Google Drive files to your notes
+Sign in with Google
+When prompted, follow the steps to authorize Evernote to access your Google account. You may be prompted in the following situations:
+
+The first time you add the calendar widget to Home. (New versions of Evernote)
+When you click the three dots in the calendar widget and select Add calendar account.... (New versions of Evernote)
+The first time you insert a Calendar Event from the Insert menu on the toolbar. (New versions of Evernote)
+The first time you select Google Drive from the Insert menu on the toolbar. (New versions of Evernote)
+The first time you paste a Google Drive file link into a note and select the Connect option. (New versions of Evernote)
+The first time you select the Google Drive (triangle) icon from the note editing toolbar. (Older versions of Evernote)
+When you select the ""Continue with Google"" sign-in option.
+Connect a Google account
+To connect a Google account to Evernote:
+
+Go to the ""Connected Services"" page of your account settings.
+Next to any of the connected services listed, click Connect. If you already have one account connected, click Add account (Professional and Teams only).
+Sign in to your Google account with your Google login information.
+Follow the prompts. You must click the blue Allow button on the permissions page to connect.
+Once connected, close the browser window and return to Evernote.
+Disconnect a Google account
+To disconnect a Google account from Evernote:
+
+Go to the ""Connected Services"" page of your account settings.
+Next to any of the connected services listed, click Disconnect."
+Link notes to calendar events,"When you connect Evernote and Google Calendar, you'll be able to link notes to events in your calendar, and access them from the calendar widget in Home or by searching for event details.
+
+event details
+
+When a note is linked to a calendar event, details including the meeting title, date, time, conference link, location, attendees, and description are automatically populated into the note. You can view these details in the note, but you cannot edit any details in Evernote. When you make changes to the event in Google Calendar, they will automatically update in your note.
+
+You can expand and collapse the calendar event by clicking the arrow in the upper right corner of the gray content block.
+
+Linked notes aren't visible in Google Calendar, but you can include a public link to the note in the calendar event description if you'd like other meeting attendees to have view access to the note. To give other meeting attendees access to the note in Evernote, share the note with them by clicking the Share note with participants button.
+
+Create a new note for a calendar event
+When a new note is created from the calendar widget, a pre-formatted note containing event details and sections for action items and notes will be added to your default notebook. There are two ways to create a new note for a calendar event."
+Manage calendar event notifications,"When you have Evernote and Google Calendar connected, Evernote can remind you when it's time to take meeting notes, or open an existing note, so you never miss a detail.
+
+Calendar event notifications give you a prompt shortly before your meetings, at the moment they start, or right after they end, so you?ll never forget to take notes or need to hunt down material you?ve prepared in advance.
+
+Take better notes?Click or tap the notification to create a pre-formatted meeting note that automatically fills in details from your calendar, like name, date, and attendees.
+Be ready for action?Instantly open an existing note connected to your meeting and find all your relevant info in one place, ready to go.
+Get more done?Follow up, assign tasks, and capture next steps quickly and easily.
+Visit our blog to learn how you can become a meetings mastermind.
+
+Note: Connecting your calendar requires a Personal, Professional, or Teams subscription.
+
+Manage calendar notification settings
+By default, you will receive a notification on desktop and mobile devices where you have enabled notifications 5 minutes before a calendar event. To change this setting, click or tap on the More options button (three dots) in the top right of the calendar widget and select Calendar settings....
+
+Calendar widget settings window
+
+In the calendar settings window, you can choose whether to receive a notification before, at the start of, or after a calendar event. You can also choose to receive the notifications on desktop, mobile, or both. The ""Remind me to take notes"" is for calendar events that don't have any linked notes. The ""Remind me to open notes"" setting is for calendar events that already have a linked note."
+Manage calendar settings,"To access your calendar settings in Evernote for Mac, Windows, or Web, click the Settings button (gear) next to your name at the top of the left navigation menu, then go to Preferences > Calendar.
+
+To access your calendar settings from the widget, click or tap on the More options button (three dots) in the top right of the calendar widget and click or tap on Calendar settings....
+
+Pre-formatted notes
+A calendar event in a linked note
+
+By default, notes created from the calendar widget will be pre-formatted with a template that includes the details of your calendar event. Sections for action items and notes are also included in the template, and can be rearranged or removed from the note. However, the template itself cannot be changed.
+
+To disable pre-formatted notes and start with a blank note every time, switch the toggle to Disabled.
+
+Calendar notifications
+Evernote can remind you when it's time to take meeting notes, or open an existing note, so you never miss a detail.
+
+Calendar event notifications give you a prompt shortly before your meetings, at the moment they start, or right after they end, so you?ll never forget to take notes or need to hunt down material you?ve prepared in advance.
+
+To learn more, visit Manage calendar event notifications from Evernote.
+
+Manage accounts
+Clicking or tapping on Manage accounts will take you to the ""Connected Services"" page of your account settings. Here you can connect or disconnect your Google Calendar account(s). To learn more, visit Add and remove Google accounts."
+Attach Google Drive files to notes,"Overview
+You can add Google Drive files to Evernote notes as attachments or as pasted links (URLs) without having to leave Evernote. When you attach Google Drive files, the links are formatted as clickable objects that are easy to find in a note. You can quickly link to weekly reports you've created in Google Sheets from a shared project note or jot down ideas for a blog post in Evernote and attach links to research saved in Google Docs.
+
+Your Google Drive file will appear in Evernote as a specially-styled link with the title displayed.
+
+Connect to Google Drive
+The first time you attempt to attach a Google Drive file to a note, you'll be asked to give Evernote permission to connect to Google Drive. When prompted, follow the steps to authorize Evernote to access your Google Drive files.
+
+You may be prompted in the following situations:
+
+The first time you select Google Drive from the Insert menu on the toolbar. (New versions of Evernote)
+The first time you select the Google Drive (triangle) icon from the note editing toolbar. (Older versions of Evernote)
+The first time you paste a Google Drive file link into a note and select the Connect option.
+Note: If you have multiple Google accounts, you'll be asked to select the Google account associated with the Google Drive file you're trying to link to Evernote.
+
+Add Google Drive files to your note
+There are two ways to add Google Drive files to your notes.
+
+SELECT A GOOGLE DRIVE FILE TO ATTACH
+If you're working in Evernote, select a file directly from your Google Drive.
+
+Click Insert > Google Drive (new version of Evernote) or the Google Drive icon (older versions of Evernote) from the editing toolbar.
+Select a file from your Google Drive.
+Click Select.
+COPY AND PASTE A GOOGLE DRIVE FILE LINK (URL) INTO A NOTE
+There are multiple ways to find the file link of a Google Drive file.
+
+In Google Drive, right-click a file and select Get link from the options menu.
+In any open Google Doc, Sheet, or Slide, click the Share button, then click Copy link.
+Once you've copied the link to your clipboard, paste it in anywhere in your note.
+
+To learn more about sharing Google Drive files, visit Share files from Google Drive from Google Drive Help."
+Create tasks,"Tasks allow you to move seamlessly between your to-dos and the information you need to get them done.
+
+Put your action items in context. Keep your tasks with related information in your notes, including web clips, images, documents, and audio files.
+Manage your tasks. Add and check off tasks in a central Tasks view or inside your notes. Changes you make in one place automatically show up in the other.
+Prioritize with ease. Unlike standard checklists, you can set one time or recurring due dates, add reminders, and flag each of your tasks?so nothing falls through the cracks.
+Some Tasks features are only available with certain Evernote plans. Learn more >>
+
+Create tasks
+Create tasks in Evernote to keep track of your to-do lists and action items. Tasks are kept in context with your project ideas, meeting notes, and important documents. Or, keep miscellaneous and unsorted tasks in your default task note to be completed or sorted later. Visit Create a task to get started.
+
+Default task note
+Notes are the core of Evernote, so it only makes sense that tasks should live within the body of a note. You can insert tasks in any note, new or existing. Or, use your default task note.
+
+Default task note icon (a note with a star icon)
+
+Tasks that have yet to be sorted, miscellaneous tasks that don't seem to fit in a note, or tasks created outside of a note using the + New button, can be saved in your default task note. Your default task note is located in your default notebook and is initially titled, ""Things to do.""
+
+You can treat this note like any other note in your account?change the title, move it to a different notebook, share it, and more.
+
+You can identify the default task note in your note list or in the Tasks view by the starred note icon next to the note title.
+
+To change your default task note, open the Tasks view, click the three dots in the upper right corner, click Default task note..., then select a new note. Alternatively, on Mac, Windows, or Web, click the Settings button (gear) next to your name at the top of the left navigation menu, go to Preferences > Tasks, and select a note from the dropdown options. You cannot select a note that was created by another person and shared with you."
+Advanced task features,"While all customers can create tasks and mark them as complete, some customers can unlock advanced task features based on their subscription plan. These include:
+
+View all tasks in one place
+Set a due date for a task
+Schedule a recurring task
+Add reminders to a task
+Add a flag to a task
+Assign a task to someone
+Note: These features are only available to Evernote Personal, Professional, and Teams customers."
+Schedule a recurring task,"Stay on top of your repeating to-dos and action items by scheduling a task to repeat on a regular basis. Choose a time preset for when you want the task to recur or set a custom recurrence schedule. When you complete a recurring task, it will automatically reset to the next due date.
+
+Recurring tasks have a circular arrow icon next to the due date.
+
+Note: This feature is only available with a Personal, Professional, or Teams subscription.
+
+Schedule a recurring task
+To schedule a recurring task, follow the steps for your operating system below.
+
+MAC
+WINDOWS
+IOS
+ANDROID
+Tap anywhere in the title of the task to bring up the task editor, then tap the calendar icon. After you select a due date, tap Set due date and recurrence and choose a pre-set recurrence schedule or tap Custom? to set a custom recurrence schedule. You can also specify a time zone and time, if desired."
+Add reminders to a task,"Task reminders allow you to set a specific date and time to receive a reminder notification. You can add up to five reminders to an individual task. When you add a reminder to a task, you'll receive an in-app notification at the date and time you specify (if you have notifications enabled).
+
+Tasks with reminders have a small bell icon next to them.
+
+Note: This feature is only available with a Personal, Professional, or Teams subscription.
+
+Add a task reminder
+To add a reminder to a task, follow the steps for your operating system below.
+
+MAC
+WINDOWS
+IOS
+ANDROID
+Tap anywhere in the title of a task to bring up the task editor, then tap the bell with a plus sign button on the toolbar above the keyboard. Choose a pre-set time period, or tap Pick a time to select a specific date and time."
+Assign a task to someone,"Keep every project moving smoothly by assigning tasks to others. When you assign a task to someone, it will appear in the Tasks view of their app.
+
+Note: This feature is only available with a Professional or Teams subscription.
+
+Assign a task to someone
+When you assign a task to someone, the assignee will receive a notification via email. If you'd like the assignee to see the contents of the note the task is in, in addition to the task itself, make sure to share the note with them as well."
+Filtered notes,"This widget requires a Personal, Professional, or Teams subscription.
+
+The filtered notes widget offers a new level of customization by allowing you to select criteria to show exactly the notes you want on Home. When adding this widget, you can add a custom name for the widget and select from an array of filters, including: tags, located in, contains, created date, and updated date. You can also apply an existing saved search. To learn more, visit Customize Home.
+
+Note: Professional and Teams customers can add more than one filtered notes widget to Home."
+Pinned note,"This widget requires a Premium, Personal, Professional, or Teams subscription.
+
+Pin a specific note for quick access. To pin a new note, click or tap the More actions button (three dots), then click or tap Select pinned note.
+
+Alternatively, open a note you want to pin, click or tap the More actions button (three dots), then select Pin to Home.
+
+Note: Professional and Teams customers can add more than one pinned note widget to Home."
+Scratch pad,"Jot down quick notes and thoughts right in Home. The scratch pad will retain the text you?ve typed. At any point, you can convert it to a note or clear it.
+
+To convert the scratch pad to a note, click or tap the More actions button (three dots), then select Convert to note. You can also use a keyboard shortcut to do this. On Mac, use Cmd + Option + N and on Windows, use Ctrl + Shift + N. When you clear the scratch pad, the content is moved to a note in the trash.
+
+The scratch pad has a limit of 600 characters and only accepts plain text.
+
+Note: Premium, Personal, Professional, and Teams customers can customize the scratch pad color and title. Professional and Teams customers can add more than one scratch pad widget to Home."
+Browse Templates,
