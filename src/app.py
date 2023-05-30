@@ -274,7 +274,7 @@ elif option == "Extract reviews from a CSV file":
         df = pd.read_csv("sentiment_analysis.csv")
         with st.spinner('Please wait...'):
             df["Topic"] = [analyze_topics(row["Review"], row["Sentiment"]) for _, row in df.iterrows()]
-            #df["Topic"] = [analyze_topics_with_openAI(row["Review"], row["Sentiment"]) for _, row in df.iterrows()] # use it if you want to more accurate topics with openAI 
+            #df["Topic"] = [analyze_topics_with_openAI(row["Review"], row["Sentiment"]) for _, row in df.iterrows()] # use it if you want to more accurate topics with openAI. Uncomment this line and comment above line. 
         st.success('Reviews and Topics:')
         
         df.to_csv("topic_analysis.csv", index=False)
