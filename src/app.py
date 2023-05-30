@@ -309,7 +309,7 @@ elif option == "Extract reviews from a CSV file":
 
     st.sidebar.markdown("### _Step 3: Review Summarization_\n")
     if st.sidebar.button("Summarize Reviews"):
-        df = pd.read_csv("whatsapp5.csv")
+        df = pd.read_csv("topic_analysis.csv")
         st.write(df)
         with st.spinner('Please wait...'):
             df["Summary"] = [generate_summary(row["Review"]) for _, row in df.iterrows()]
